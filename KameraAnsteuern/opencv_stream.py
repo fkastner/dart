@@ -1,5 +1,5 @@
 import pygame
-import Image
+#import Image
 from pygame.locals import *
 import sys
 
@@ -21,7 +21,7 @@ def get_image(camera):
     pg_img = pygame.image.frombuffer(im_rgb.tostring(), cv.GetSize(im_rgb), "RGB")
     return pg_img
 
-camera = cv.CreateCameraCapture(1)
+camera = cv.CreateCameraCapture(0)
 
 fps = 1000.0
 pygame.init()
